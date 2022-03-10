@@ -49,7 +49,7 @@ const crearPersona = () =>{
 
 
 
-var listaPersona = crearPersona();
+let listaPersona = crearPersona();
 
 
 console.log(listaPersona.sort( (a,b) => a.edad - b.edad ));
