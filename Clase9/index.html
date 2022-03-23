@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Lista de compras</h2>
+    <input type="text" id="elemento" placeholder="Nombre producto" required>
+    <input type="number" id="precio" placeholder="Precio del producto" required>
+    <button onclick="agregar()">Agregar</button>
+    <button onclick="eliminar()">Eliminar ultimo elemento</button>
+    <button onclick="calcular()">Calcular precio final</button>
+
+    <div style="display: flex;">
+        <div style="flex-direction: column;">
+
+            <p style="font-weight: bold; flex-direction: column;">Producto:</p>
+            <ul id="lista">
+
+            </ul>
+
+        </div>
+        
+        <div style="flex-direction: column; margin-left: 110px;">
+
+            <p style="font-weight: bold;">Precios:</p>
+            <ul id="listaPrecio" style="list-style: none;">
+            
+            </ul>
+        
+        </div>
+        
+        <div>
+            <input type="text" name="" id="resultado" disabled style="margin-left: 200px;" placeholder="Precio final">
+        </div>
+    </div>
+
+
+<style>
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+</style>
+</body>
+<script src="app.js"></script>
+</html>
